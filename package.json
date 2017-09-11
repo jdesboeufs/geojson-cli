@@ -1,0 +1,17 @@
+{
+  "name": "geojson-cli",
+  "version": "0.0.1-dev",
+  "description": "Useful CLI tools to deal with GeoJSON files and related",
+  "repository": "git@github.com:jdesboeufs/geojson-cli.git",
+  "author": "Jérôme Desboeufs <jerome.desboeufs@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "geojson2ndjson": "bin/geojson2ndjson.js",
+    "ndjson2geojson": "bin/ndjson2geojson.js"
+  },
+  "dependencies": {
+    "geojson-stream": "^0.0.1",
+    "ndjson": "^1.5.0"
+  }
+}
