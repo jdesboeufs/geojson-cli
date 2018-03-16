@@ -2,7 +2,7 @@
 'use strict'
 
 const {parse} = require('ndjson')
-const {stringify} = require('geojson-stream')
+const {stringify} = require('../lib/streams')
 
 process.stdin
   .pipe(parse())

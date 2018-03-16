@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const {parse} = require('geojson-stream')
+const {parse} = require('../lib/streams')
 const {stringify} = require('ndjson')
 
 process.stdin

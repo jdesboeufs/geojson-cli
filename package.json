@@ -11,7 +11,7 @@
     "ndjson2geojson": "bin/ndjson2geojson.js"
   },
   "dependencies": {
-    "geojson-stream": "^0.0.1",
+    "JSONStream": "^1.3.2",
     "ndjson": "^1.5.0"
   }
 }
