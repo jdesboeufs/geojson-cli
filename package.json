@@ -3,13 +3,17 @@
   "version": "0.0.1",
   "description": "Useful CLI tools to deal with GeoJSON files and related",
   "repository": "git@github.com:jdesboeufs/geojson-cli.git",
-  "author": "Jérôme Desboeufs <jerome.desboeufs@gmail.com>",
+  "author": "Jérôme Desboeufs <jerome@livingdata.co>",
   "license": "MIT",
   "private": false,
   "bin": {
     "geojson2ndjson": "bin/geojson2ndjson.js",
     "ndjson2geojson": "bin/ndjson2geojson.js",
     "geojson-sanitize": "bin/geojson-sanitize.js"
+  },
+  "scripts": {
+    "lint": "xo",
+    "test": "echo No test for now"
   },
   "dependencies": {
     "@turf/turf": "^5.1.6",
@@ -19,5 +23,15 @@
     "ndjson": "^1.5.0",
     "proj4": "^2.4.4",
     "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.20.3"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "engines": {
+    "node": ">= 6"
   }
 }

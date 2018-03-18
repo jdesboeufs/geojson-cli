@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const {parse} = require('../lib/streams')
 const {stringify} = require('ndjson')
+const {parse} = require('../lib/streams')
 
 process.stdin
   .pipe(parse())

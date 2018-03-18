@@ -7,10 +7,9 @@ const {pipe} = require('mississippi')
 const {parse, stringify} = require('../lib/streams')
 const {transform} = require('../lib/transform')
 
-const argv = yargs
+const {argv} = yargs
   .coerce('fromSrs', String)
   .coerce('precision', Number.parseInt)
-  .argv
 
 const pipeline = [
   parse(),
