@@ -1,6 +1,6 @@
 {
   "name": "geojson-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Useful CLI tools to deal with GeoJSON files and related",
   "repository": "git@github.com:jdesboeufs/geojson-cli.git",
   "author": "Jérôme Desboeufs <jerome@livingdata.co>",
