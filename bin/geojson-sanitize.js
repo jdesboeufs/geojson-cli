@@ -2,6 +2,7 @@
 'use strict'
 
 const {createGzip} = require('zlib')
+const {createGunzip} = require('gunzip-stream')
 const yargs = require('yargs')
 const {pipe} = require('mississippi')
 const {parse, stringify} = require('../lib/streams')
@@ -12,6 +13,7 @@ const {argv} = yargs
   .coerce('precision', Number.parseInt)
 
 const pipeline = [
+  createGunzip(),
   parse(),
   transform([
     {op: 'unproj', from: argv.fromSrs},
