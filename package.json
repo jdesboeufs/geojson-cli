@@ -9,7 +9,8 @@
   "bin": {
     "geojson2ndjson": "bin/geojson2ndjson.js",
     "ndjson2geojson": "bin/ndjson2geojson.js",
-    "geojson-sanitize": "bin/geojson-sanitize.js"
+    "geojson-sanitize": "bin/geojson-sanitize.js",
+    "geojson-centroid": "bin/geojson-centroid.js"
   },
   "scripts": {
     "lint": "xo",
